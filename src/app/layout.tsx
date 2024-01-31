@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navbar";
 import theme from "@/theme";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -24,6 +25,7 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            <Navbar />
             {children}
           </ThemeProvider>
         </AppRouterCacheProvider>
